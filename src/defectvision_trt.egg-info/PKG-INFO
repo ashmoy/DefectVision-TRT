@@ -1,3 +1,13 @@
+Metadata-Version: 2.4
+Name: defectvision-trt
+Version: 0.1.0
+Summary: Industrial visual anomaly detection with PatchCore-style features, ONNX export and TensorRT benchmarking.
+Author: Your Name
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
 # DefectVision-TRT
 
 Industrial visual anomaly detection with a PatchCore-style memory bank, ONNX export, and TensorRT-oriented benchmarking.

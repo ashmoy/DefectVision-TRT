@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "defectvision-trt"
+version = "0.1.0"
+description = "Industrial visual anomaly detection with PatchCore-style features, ONNX export and TensorRT benchmarking."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Your Name"}]
+
+[tool.setuptools.packages.find]
+where = ["src"]

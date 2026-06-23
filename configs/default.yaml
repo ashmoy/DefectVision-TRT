@@ -1,0 +1,27 @@
+seed: 42
+project_name: DefectVision-TRT
+
+data:
+  root: data/mvtec
+  category: bottle
+  image_size: 256
+  num_workers: 2
+
+model:
+  backbone: wide_resnet50_2
+  layers: [layer2, layer3]
+  max_memory_patches: 50000
+  distance_chunk_size: 4096
+  score_topk_ratio: 0.01
+
+train:
+  batch_size: 8
+  device: auto
+
+inference:
+  batch_size: 8
+  threshold_quantile: 0.995
+
+export:
+  opset: 17
+  dynamic_batch: true
